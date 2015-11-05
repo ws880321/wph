@@ -1,0 +1,97 @@
+*{padding: 0;margin: 0;}
+li{list-style: none}
+header {
+    height: 44px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-l {
+    float: left;
+}
+.header-r {
+    float: right;
+}
+.header-r a ,
+.header-l a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.header-l a span,
+.header-r a span {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.header-l a span:before {
+    content: '';
+    height: 2px;
+    width: 20px;
+    background: #333;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    box-shadow: 0 6px #333, 0 12px #333;
+    -webkit-box-shadow: 0 6px #333, 0 12px #333;
+    -moz-box-shadow: 0 6px #333, 0 12px #333;
+}
+
+.header-r a span:before,
+.header-r a span:after {
+    content: '';
+    height: 12px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-r a span:before {
+    width: 12px;
+    border: 2px #333 solid;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+}
+
+.header-r a span:after {
+    width: 3px;
+    background: #333;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    top: 10px;
+    left: 15px;
+}
+.header-logo{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -49.5px;
+	height: 44px;
+
+}
+.header-logo a{text-decoration: none}
+.header-logo .logo{float: left;margin:10px 10px 0 0;}
+.header-logo .address{float: right;margin:12px 0px 0 0;color: #555;font-size: 14px;}
+nav{width: 100%;background: #39424a;overflow: hidden;}
+
+nav li{width: 20%;border-right: 1px solid #4a5259;box-sizing:border-box;float: left;text-align: center;padding:2px 0;margin: 5px 0}
+nav a{text-decoration: none;color: #cfd3da;font-size: 14px;}
+nav a span{padding: 2px 0;position: relative;display: inline-block;}
+nav .active span{border-bottom: #f02387 1px solid;padding: 2px 3px;position: relative;color: #fff;}
+.slideBox{width: 100%;height:200px;position: relative;}
+.slideBox li img{width: 100%;height:200px;}
+.slideBox .hd{ position:absolute; height:28px; line-height:28px; bottom:0; right:0; z-index:1; }
+	.slideBox .hd li{ display:inline-block; width:5px; height:5px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#333; text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+	.slideBox .hd li.on{ background:#fff;  }
